@@ -162,8 +162,12 @@ python job_alerts_linkedin.py
 5.Sit back and relax: The code will automate the process of setting job alerts for the specified companies and job titles on LinkedIn.
 
 ### Handling Duplicate Companies
-One limitation of this project is that if multiple companies have the same name but work in different fields/domains, the code will always select the first company that appears when searching for a company. 
-To address this issue, the user  should ensure the correct company name is inputed in the excel file, e.g
+
+One of the limitation of this project is that if a company is searched using it's name and it dosen't appears, it get skipped and there might be instance of 2-5 companies not included in the creation of the job alert, due to the commands executing too fast for the network to handle. 
+To address this issue, i increased the time it takes for different section of the code to sleep from 1 - 5.
+
+Another limitation of this project is that if multiple companies have the same name but work in different fields/domains, the code will always select the first company that appears when searching for a company. 
+To address this issue, the user should ensure the correct company name is inputed in the excel file, e.g
 - "Google" not "goggle"
 - "Cloud2, a BNC Group company" not "Cloud2/BNC"
 
