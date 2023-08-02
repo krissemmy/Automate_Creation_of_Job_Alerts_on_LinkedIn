@@ -52,7 +52,7 @@ On Linux or macOS:
 cd ~/Downloads
 
 # Extract the tar.gz file
-tar -xvzf chromedriver-vX.XX.X-linux64.tar.gz
+tar -xvzf chromedriver-linux64.zip
 ```
 On Windows:
 
@@ -65,6 +65,7 @@ Move the Chromedriver executable to a suitable location:
 
 On Linux or macOS:
 ```
+cd chromedriver-linux64/
 # Assuming you want to move chromedriver to /usr/local/bin/
 sudo mv chromedriver /usr/local/bin/
 ```
