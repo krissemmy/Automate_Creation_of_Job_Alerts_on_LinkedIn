@@ -131,6 +131,7 @@ def create_alert():
         # Click the 'Create alert' button to set a job alert for the selected company and job title
         create_alert = driver.find_element(By.XPATH, '/html/body/div[5]/div[3]/div[4]/div/div/main/div/div[1]/header/div[2]/div/div')
         create_alert.click()
+        print(f"Job alert for {title} in {len(df_part)} companies has been created")
         time.sleep(3)
 
         # Loop through the remaining job titles to set alerts for each of them
@@ -144,6 +145,7 @@ def create_alert():
             try:
                 create_alert = driver.find_element(By.XPATH, '/html/body/div[5]/div[3]/div[4]/div/div/main/div/div[1]/header/div[2]/div/div')
                 create_alert.click()
+                print(f"Job alert for {job_t} in {len(df_part)} companies has been created")
                 time.sleep(3)
             except:
                 print(f"For the {n} company list, No Matching jobs found for {job_t}")
