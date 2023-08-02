@@ -30,7 +30,7 @@ git clone https://github.com/krissemmy/Automate_Creation_of_Job_Alerts_on_Linked
 ```
 3. Create a Virtual environment
 ```
-python -m virtualenv my-venv   
+python -m venv my-venv   
 ```
 4. Activate the virtual environment
 ```
