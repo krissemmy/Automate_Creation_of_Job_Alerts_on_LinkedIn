@@ -37,8 +37,8 @@ def create_alert():
 
     # Replace 'email_or_num' with your email or phone number, and 'your_password' wiith your password which are your LinkedIn credentials
     # Also replace the number of Dataframes you want your original list to be broken down to
-    email_or_num = "chrisemma2005@gmail.com"
-    password = "asdfghjkl6789"
+    email_or_num = " "
+    password = " "
     parts = 3
 
     # Locate the email input field and enter the LinkedIn email/username
